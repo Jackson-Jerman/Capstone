@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "tripName": "Titan",
+        "location": "solar",
+        "hotel": "hi",
+        "imageURL": "https://static0.gamerantimages.com/wordpress/wp-content/uploads/2022/02/destiny-2-sentinel-titan-rework.jpg"
+    },
+    {
+        "id": 2,
+        "tripName": "Titan",
+        "location": "solar",
+        "hotel": "hi",
+        "imageURL": "https://static0.gamerantimages.com/wordpress/wp-content/uploads/2022/02/destiny-2-sentinel-titan-rework.jpg"
+    },
+    {
+        "id": 3,
+        "tripName": "Titan",
+        "location": "solar",
+        "hotel": "hi",
+        "imageURL": "https://static0.gamerantimages.com/wordpress/wp-content/uploads/2022/02/destiny-2-sentinel-titan-rework.jpg"
+    }
+]

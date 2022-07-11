@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Trips</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="header2"> 
+        <p>Write down notes about your trip</p>
+    </div>
+
+    <main></main>
+        <div class="position2">
+
+                <form class=form2>
+                    <input
+                        type='text'
+                        id="startDate"
+                        placeholder="What day are you planning to start your trip?"/>
+                    <input
+                    type='text'
+                    id="endDate"
+                    placeholder="What day are you planning to end your trip?"/>
+                    <input 
+                        type='text'
+                        id="place"
+                        placeholder="Where should you go and visit while you are there?"/>
+                    <input
+                            type="text"
+                            id="other"
+                            placeholder="Other details you don't want to forget?"/>
+                        <button class="button2">Add Notes about Trip</button>
+                </form>
+            <section id="note-container"></section>
+        </div>
+    </main>
+
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

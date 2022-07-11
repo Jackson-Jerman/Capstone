@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bucket list trips</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+    <div class="header">
+        <h1>Plan your trip</h1>  
+    </div> 
+    <main>
+       
+        <div class="position">
+        <form>
+            <input 
+                type='text'
+                id="tripName"
+                placeholder="What is the trips name?"/>
+            <input 
+                type='text'
+                id="location"
+                placeholder="Where is the location of the trip?"/>
+           <input
+                type="text"
+                id="hotel"
+                placeholder="What hotel do you want to stay at?"/>
+            <input 
+                type='text'
+                id="img"
+                placeholder='Paste an image URL of where you are going.'/>
+            <button>Add Trip</button>
+          </form>
+        </div>
+          <section id="trip-container"></section>
+    </main>
+
+
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="index.js"></script>
+    
+
+</body>
+</html>
