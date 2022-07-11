@@ -1,3 +1,4 @@
+const { appendFile } = require('fs')
 const trip = require('./db.json')
 let globalId = 4
 
@@ -22,6 +23,14 @@ module.exports = {
         let index = trip.findIndex(elem => elem.id === +req.params.id)
         trip.splice(index, 1)
         res.status(200).send(trip)
+    },
+
+    updateTrip: (req, res) => {
+        let { type } = req.body
+        let index = trip.findIndex(elem => elem.id === +req.params.id)
+        
+        btns-container.addEventListener('click', info.html )
+
     },
     
     createTripNote: (req, res) => {
