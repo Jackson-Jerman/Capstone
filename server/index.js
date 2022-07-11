@@ -17,23 +17,23 @@ app.post("/api/trip/note", createTripNote);
 app.delete("/api/trip/note:id", deleteTripNote);
 
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '../index.html'))
+    res.sendFile(path.join(__dirname, '../client/index.html'))
 })
 
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '../info.html'))
+    res.sendFile(path.join(__dirname, '../client/info.html'))
 })
 
 app.get('/css', (req, res) => {
-    res.sendFile(path.join(__dirname, '../styles.css'))
+    res.sendFile(path.join(__dirname, '../client/styles.css'))
 })
 
 app.get('/js', (req, res) => {
-    res.sendFile(path.join(__dirname, '../index.js'))
+    res.sendFile(path.join(__dirname, '../client/index.js'))
 })
 
 app.get('/js', (req, res) => {
-    res.sendFile(path.join(__dirname, '../main.js'))
+    res.sendFile(path.join(__dirname, '../client/main.js'))
 })
 
 const port = process.env.PORT || 9005
