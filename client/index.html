@@ -5,13 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bucket list trips</title>
-    <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="/css">
 </head>
 <body>
 
     <div class="header">
-        <h1>Plan your trip</h1>  
+        <h1>Plan your trips</h1>  
     </div> 
     <main>
        
@@ -37,13 +36,51 @@
           </form>
         </div>
           <section id="trip-container"></section>
+
+
+          <div class="modal-container hidden" id="edit-form">
+            
+        
+            <div class="modal">
+                <div class="header2"> 
+                    <p>Write down notes about your trip</p>
+                </div>
+                <div class="position2">
+        
+                        <form class=form2>
+                            <input
+                                type='text'
+                                id="startDate"
+                                placeholder="What day are you planning to start your trip?"/>
+                            <input
+                                type='text'
+                                id="endDate"
+                                placeholder="What day are you planning to end your trip?"/>
+                            <input 
+                                type='text'
+                                id="place"
+                                placeholder="Where should you go and visit while you are there?"/>
+                            <input
+                                type="text"
+                                id="other"
+                                placeholder="Other details you don't want to forget?"/>
+                            <button class="button2">Add Notes about Trip</button>
+                        </form>
+                    <section id="note-container"></section>
+                </div>
+            </div>
+        
+        
+        </div>
+
+
     </main>
 
 
 
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script src="index.js"></script>
-    <sricpt src="/js"></sricpt>
+    <script src="/index"></script>
+    <sricpt src="/main"></sricpt>
     
 </body>
 </html>

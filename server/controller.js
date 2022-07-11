@@ -43,7 +43,7 @@ module.exports = {
             "other": other
         }
         trip.push(newTripNote)
-        res.status(200).send(trip)
+        res.status(200).send(tripNote)
         globalId++
     },
 

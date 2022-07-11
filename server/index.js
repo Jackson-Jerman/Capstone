@@ -1,5 +1,6 @@
 const express = require("express");
 const cors = require("cors");
+const path = require("path")
 
 const app = express();
 
@@ -21,7 +22,7 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '../client/index.html'))
 })
 
-app.get('/', (req, res) => {
+app.get('/info', (req, res) => {
     res.sendFile(path.join(__dirname, '../client/info.html'))
 })
 
@@ -29,15 +30,15 @@ app.get('/css', (req, res) => {
     res.sendFile(path.join(__dirname, '../client/styles.css'))
 })
 
-app.get('/js', (req, res) => {
+app.get('/index', (req, res) => {
     res.sendFile(path.join(__dirname, '../client/index.js'))
 })
 
-app.get('/js', (req, res) => {
+app.get('/main', (req, res) => {
     res.sendFile(path.join(__dirname, '../client/main.js'))
 })
 
-const port = process.env.PORT || 9005
+const port = process.env.PORT || 3005
 
 app.listen(port, () => {
     console.log(`Server running on port ${port}`)

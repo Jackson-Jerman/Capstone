@@ -1,14 +1,14 @@
 const tripContainer = document.getElementById("note-container")
 const form = document.querySelector('form')
 
-const baseURL = `http://localhost:9005/api/trip/note`
+const baseURL = `/api/trip/note`
 
 const tripNoteCallback = ({ data: trip }) => displaytripNotes(trip)
 const errCallback = err => console.log(err)
 
 
 const createTripNote = body => axios.post(baseURL, body).then(tripNoteCallback).catch(errCallback)
-const deleteTripNote = id => axios.delete(`${baseURL}/${id}`).then(tripNoteCallback).catch(errCallback)
+// const deleteTripNote = id => axios.delete(`${baseURL}/${id}`).then(tripNoteCallback).catch(errCallback)
 
 
 function submitHandler(e) {

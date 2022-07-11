@@ -129,3 +129,21 @@ input[type='text'] {
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
+
+
+.modal-container{
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(50, 50, 50, .85);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hidden{
+  display: none;
+}
