@@ -24,22 +24,6 @@ module.exports = {
         res.status(200).send(trip)
     },
     
-    // updateGuardian: (req, res) => {
-    //     let { type } = req.body
-    //     let index = guardian.findIndex(elem => elem.id === +req.params.id)
-
-    //     if (type === 'minus' && guardian[index].rating >= 1) {
-    //         guardian[index].rating -= 1;
-    //         res.status(200).send(guardian);
-    //     } else if(type === 'plus' && guardian[index].rating < 10) {
-    //         guardian[index].rating += 1;
-    //         res.status(200).send(guardian);
-    //     } else {
-    //         res.status(400).send('Invalid rating');
-    //     }
-
-    // },
-
     createTripNote: (req, res) => {
         let { startDate, endDate, place, other } = req.body
         let newTripNote = {
