@@ -56,7 +56,7 @@ function createTripNoteCard(tripNote) {
 function displaytripNotes(arr) {
     tripContainer.innerHTML = ``
     for (let i = 0; i < arr.length; i++) {
-        createTripNoteCard(arr[i])
+        createTripCard(arr[i])
     }
 }
 

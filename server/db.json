@@ -1,23 +1,23 @@
 [
     {
         "id": 1,
-        "tripName": "Titan",
-        "location": "solar",
-        "hotel": "hi",
-        "imageURL": "https://static0.gamerantimages.com/wordpress/wp-content/uploads/2022/02/destiny-2-sentinel-titan-rework.jpg"
+        "tripName": "Brant's trip",
+        "location": "Sunvalley, Idaho",
+        "hotel": "The Lodge",
+        "imageURL": "http://www.inidaho.com/inidaho_photos/41193.jpg"
     },
     {
         "id": 2,
-        "tripName": "Titan",
-        "location": "solar",
-        "hotel": "hi",
-        "imageURL": "https://static0.gamerantimages.com/wordpress/wp-content/uploads/2022/02/destiny-2-sentinel-titan-rework.jpg"
+        "tripName": "Tk's trip",
+        "location": "Maui,Hawaii",
+        "hotel": "The Four Season",
+        "imageURL": "https://cf.bstatic.com/xdata/images/hotel/max1280x900/34334706.jpg?k=c969244d337edb26559306cf1abd99f9d7f79493529e1745db8f3daf7cb7073f&o=&hp=1"
     },
     {
         "id": 3,
-        "tripName": "Titan",
-        "location": "solar",
-        "hotel": "hi",
-        "imageURL": "https://static0.gamerantimages.com/wordpress/wp-content/uploads/2022/02/destiny-2-sentinel-titan-rework.jpg"
+        "tripName": "Jackson's trip",
+        "location": "Cancun, Mexico",
+        "hotel": "the Finest",
+        "imageURL": "http://www.finestresortplayamujeres.com/images/slides/slide-48.jpg"
     }
 ]

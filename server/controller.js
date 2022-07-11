@@ -28,8 +28,8 @@ module.exports = {
     updateTrip: (req, res) => {
         let { type } = req.body
         let index = trip.findIndex(elem => elem.id === +req.params.id)
-        
-        btns-container.addEventListener('click', info.html )
+        trip.push(index, 1)
+        res.status(200).send(tripNote)
 
     },
     
