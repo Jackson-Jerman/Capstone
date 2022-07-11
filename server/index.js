@@ -22,10 +22,6 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '../client/index.html'))
 })
 
-app.get('/info', (req, res) => {
-    res.sendFile(path.join(__dirname, '../client/info.html'))
-})
-
 app.get('/css', (req, res) => {
     res.sendFile(path.join(__dirname, '../client/styles.css'))
 })
