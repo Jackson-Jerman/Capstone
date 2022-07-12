@@ -1,5 +1,5 @@
 const tripContainer = document.getElementById("note-container")
-const form = document.querySelector('form')
+const form1 = document.querySelector('form')
 
 const baseURL1 = `/api/trip/note`
 
@@ -11,7 +11,7 @@ const createTripNote = body => axios.post(baseURL1, body).then(tripNoteCallback)
 // const deleteTripNote = id => axios.delete(`${baseURL}/${id}`).then(tripNoteCallback).catch(errCallback)
 
 
-function submitHandler(e) {
+function submitHandler1(e) {
     e.preventDefault()
 
     let startDate = document.querySelector('#startDate')
@@ -60,6 +60,6 @@ function displaytripNotes(arr) {
     }
 }
 
-form.addEventListener('submit', submitHandler)
+form1.addEventListener('submit', submitHandler1)
 
 getAllTripNote()
