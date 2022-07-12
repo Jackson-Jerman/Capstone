@@ -147,3 +147,13 @@ input[type='text'] {
 .hidden{
   display: none;
 }
+
+.header2 {
+  border-radius: 25px;
+  overflow: hidden;
+  background-color: #F7F0F5;
+  padding: 5px 10px ;
+  font-family: 'Brush Script MT', cursive ;
+  font-size: large; 
+  text-align: center;  
+}
