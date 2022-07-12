@@ -1,13 +1,13 @@
 const tripContainer = document.getElementById("note-container")
 const form = document.querySelector('form')
 
-const baseURL = `/api/trip/note`
+const baseURL1 = `/api/trip/note`
 
 const tripNoteCallback = ({ data: trip }) => displaytripNotes(trip)
 const errCallback = err => console.log(err)
 
-
-const createTripNote = body => axios.post(baseURL, body).then(tripNoteCallback).catch(errCallback)
+const getAllTripNote = () => axios.get(baseURL).then(tripCallback).catch(errCallback)
+const createTripNote = body => axios.post(baseURL1, body).then(tripNoteCallback).catch(errCallback)
 // const deleteTripNote = id => axios.delete(`${baseURL}/${id}`).then(tripNoteCallback).catch(errCallback)
 
 
@@ -50,11 +50,11 @@ function createTripNoteCard(tripNote) {
     `
 
 
-   tripContainer.appendChild(tripNoteCard)
+   tripContainer1.appendChild(tripNoteCard)
 }
 
 function displaytripNotes(arr) {
-    tripContainer.innerHTML = ``
+    noteContainer.innerHTML = ``
     for (let i = 0; i < arr.length; i++) {
         createTripCard(arr[i])
     }
@@ -62,4 +62,4 @@ function displaytripNotes(arr) {
 
 form.addEventListener('submit', submitHandler)
 
-
+getAllTripNote()

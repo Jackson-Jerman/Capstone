@@ -25,14 +25,6 @@ module.exports = {
         res.status(200).send(trip)
     },
 
-    updateTrip: (req, res) => {
-        let { type } = req.body
-        let index = trip.findIndex(elem => elem.id === +req.params.id)
-        trip.push(index, 1)
-        res.status(200).send(tripNote)
-
-    },
-    
     createTripNote: (req, res) => {
         let { startDate, endDate, place, other } = req.body
         let newTripNote = {
@@ -42,8 +34,8 @@ module.exports = {
             "place": place,
             "other": other
         }
-        trip.push(newTripNote)
-        res.status(200).send(tripNote)
+        openDetailsForm.push(newTripNote)
+        res.status(200).send(trip)
         globalId++
     },
 

@@ -1,6 +1,7 @@
 const tripContainer = document.getElementById("trip-container")
 const form = document.querySelector('form')
 const editForm = document.querySelector('#edit-form')
+const details = document.querySelector('#details')
 
 const baseURL = `/api/trip`
 
@@ -11,7 +12,8 @@ const errCallback = err => console.log(err)
 const getAllTrip = () => axios.get(baseURL).then(tripCallback).catch(errCallback)
 const createTrip = body => axios.post(baseURL, body).then(tripCallback).catch(errCallback)
 const deleteTrip = id => axios.delete(`${baseURL}/${id}`).then(tripCallback).catch(errCallback)
-// const updateTrip = (id, type) => axios.put(`${baseURL}/${id}`, {type}).then(tripCallback).catch(errCallback)
+
+
 
 function submitHandler(e) {
     e.preventDefault()
@@ -47,6 +49,9 @@ function createTripCard(trip) {
     <div class="btns-container">
         <button id="edit-${trip.id}" onclick="openEditForm(event)">edit</button>
     </div>
+    <div class="details-container">
+        <a href="/api/trip/details" > <button id="details-${trip.id}" onclick="openDetailsForm(event)">details</button> </a>
+    </div>
     <button onclick="deleteTrip(${trip.id})">delete</button>
     `
 
@@ -59,6 +64,15 @@ function openEditForm(event){
     const id = elementId.split("-")[1]
     // alert(id)
     editForm.classList.remove('hidden')
+}
+
+function openDetailsForm(event){
+    const elementId = event.target.id
+    const id = elementId.split("-")[1]
+    // alert(id)
+
+    let div = document.getElementById('details')
+    
 }
 
 function displaytrip(arr) {

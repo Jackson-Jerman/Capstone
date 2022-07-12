@@ -8,18 +8,21 @@ app.use(cors());
 
 app.use(express.json());
 
-const { getTrip , createTrip , deleteTrip , updateTrip , createTripNote, deleteTripNote } = require('./controller')
+const { getTrip , createTrip , deleteTrip , createTripNote, deleteTripNote } = require('./controller')
 
 
 app.get("/api/trip", getTrip);
 app.post("/api/trip", createTrip);
 app.delete("/api/trip/:id", deleteTrip);
-app.put("/api/trip/:id", updateTrip)
 app.post("/api/trip/note", createTripNote);
 app.delete("/api/trip/note:id", deleteTripNote);
 
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '../client/index.html'))
+})
+
+app.get('/api/trip/details', (req, res) => {
+    res.sendFile(path.join(__dirname, '../client/details.html'))
 })
 
 app.get('/css', (req, res) => {
