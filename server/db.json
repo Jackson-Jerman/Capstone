@@ -4,6 +4,7 @@
         "tripName": "Brant's trip",
         "location": "Sunvalley, Idaho",
         "hotel": "The Lodge",
+        "price": "5000",
         "imageURL": "http://www.inidaho.com/inidaho_photos/41193.jpg"
     },
     {
@@ -11,6 +12,7 @@
         "tripName": "Tk's trip",
         "location": "Maui, Hawaii",
         "hotel": "The Four Season",
+        "price": "5000",
         "imageURL": "https://cf.bstatic.com/xdata/images/hotel/max1280x900/34334706.jpg?k=c969244d337edb26559306cf1abd99f9d7f79493529e1745db8f3daf7cb7073f&o=&hp=1"
     },
     {
@@ -18,6 +20,7 @@
         "tripName": "Jackson's trip",
         "location": "Cancun, Mexico",
         "hotel": "the Finest",
+        "price": "5000",
         "imageURL": "http://www.finestresortplayamujeres.com/images/slides/slide-48.jpg"
     }
 ]

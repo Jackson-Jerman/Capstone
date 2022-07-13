@@ -1,5 +1,6 @@
-const tripContainer = document.getElementById("note-container")
+const tripContainer1 = document.getElementById("note-container")
 const form1 = document.querySelector('form')
+const returnHome = document.querySelector(".return")
 
 const baseURL1 = `/api/trip/note`
 
@@ -58,6 +59,10 @@ function displaytripNotes(arr) {
     for (let i = 0; i < arr.length; i++) {
         createTripCard(arr[i])
     }
+}
+
+function homepage(returnHome){
+    returnHome.addEventListener('click', href)
 }
 
 form1.addEventListener('submit', submitHandler1)
