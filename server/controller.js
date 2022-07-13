@@ -70,6 +70,8 @@ module.exports = {
             console.log(trip[index].price)
             res.status(200).send(trip);
         } else if(type === 'plus') {
+            console.log(trip[index].price)
+            trip[index].price = +trip[index].price
             trip[index].price += 100;
             res.status(200).send(trip);
         } else {
