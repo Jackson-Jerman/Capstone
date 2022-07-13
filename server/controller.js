@@ -22,12 +22,13 @@ module.exports = {
     getTrip: (req, res) => {res.status(200).send(trip)},
 
     createTrip: (req, res) => {
-        let { tripName, location, hotel, imageURL } = req.body
+        let { tripName, location, hotel, price, imageURL } = req.body
         let newTrip = {
             "id": globalId,
             "tripName": tripName,
             "location": location,
             "hotel": hotel,
+            "price": price,
             "imageURL": imageURL
         }
         trip.push(newTrip)
